@@ -1,78 +1,151 @@
-# OSS Audit Project: LibreOffice
+# OSS Audit Project – 24BCY10254
 
-**Student Name:** MULI CHARAN REDDY
-**Roll Number:** 24BCY10254
-**Course:** Open Source Software  
-**Date of Submission:** March 23, 2026
+## 👤 Student Details
 
----
-
-## 📋 Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [Chosen Software](#chosen-software)
-3. [Scripts Overview](#scripts-overview)
-4. [Installation & Dependencies](#installation--dependencies)
-5. [How to Run the Scripts](#how-to-run-the-scripts)
-6. [Script Details](#script-details)
-7. [Troubleshooting](#troubleshooting)
-8. [References](#references)
-9. [Declaration](#declaration)
+* **Name:** Muli Charan Reddy
+* **Registration Number:** 24BCY10254
+* **Course:** Open Source Software
 
 ---
 
-## 📖 Project Overview
+## 📌 Project Description
 
-This capstone project is a comprehensive audit of an open-source software project. It combines philosophical analysis with practical Linux shell scripting to demonstrate understanding of open-source principles, licensing, governance, and system administration.
+This project is part of the Open Source Software course.
+The objective is to analyze an open-source software and demonstrate Linux and shell scripting skills.
 
-The project consists of two main components:
-
-1. **Written Report:** A 12-16 page analysis covering the origin story, license, ethics, Linux footprint, ecosystem mapping, and comparison with proprietary alternatives of the chosen software.
-
-2. **Five Shell Scripts:** Practical Linux scripts that demonstrate command-line proficiency and understanding of open-source tooling.
+I have chosen **LibreOffice** as the software for this project. LibreOffice is a free and open-source office suite used for documents, spreadsheets, and presentations.
 
 ---
 
-## 🖥️ Chosen Software: LibreOffice
+## 💻 Software Chosen
 
-LibreOffice is a free and open-source office productivity suite. It was born in 2010 when the OpenOffice.org community forked the project in response to governance concerns following Oracle's acquisition of Sun Microsystems. Today, it is maintained by The Document Foundation, a non-profit organization that ensures the software remains community-driven and free from corporate control.
-
-### Key Facts:
-
-| Attribute | Details |
-|-----------|---------|
-| **License** | Mozilla Public License 2.0 (MPL 2.0) |
-| **First Release** | September 28, 2010 |
-| **Current Version** | 7.x |
-| **Maintainer** | The Document Foundation |
-| **Languages** | Available in over 120 languages |
-| **Platforms** | Linux, Windows, macOS |
+* **Name:** LibreOffice
+* **Category:** Office Suite
+* **License:** MPL / LGPL
 
 ---
 
-## 📜 Scripts Overview
+## 📂 Scripts Included
 
-| Script | Filename | Purpose | Key Concepts |
-|--------|----------|---------|--------------|
-| Script 1 | `script1_system_identity.sh` | Displays system information like a welcome screen | Variables, command substitution, formatted output |
-| Script 2 | `script2_package_inspector.sh` | Checks if LibreOffice is installed and displays details | Package management, case statements, functions |
-| Script 3 | `script3_disk_auditor.sh` | Audits disk usage and permissions of system directories | Arrays, for loops, awk, du command |
-| Script 4 | `script4_log_analyzer.sh` | Analyzes log files for error messages | While-read loops, counters, command-line arguments |
-| Script 5 | `script5_manifesto_generator.sh` | Generates a personalized open-source philosophy | User input (read), file writing, here-documents |
+### 🔹 Script 1: System Identity Report
+
+Displays basic system information such as:
+
+* Kernel version
+* Linux distribution
+* Current user
+* Uptime
+* Date and time
 
 ---
 
-## 🔧 Installation & Dependencies
+### 🔹 Script 2: FOSS Package Inspector
 
-### Operating System Requirements
+* Checks if LibreOffice is installed
+* Displays version, license, and summary
+* Uses `if-else` and `case` statements
 
-- **Linux Distribution:** Ubuntu 20.04/22.04 LTS, Debian 11+, or any Debian-based distribution
-- **Alternative:** Any Linux distribution with Bash 4.0+
+---
 
-### Required Packages
+### 🔹 Script 3: Disk and Permission Auditor
 
-Run the following command to install all dependencies:
+* Checks important system directories
+* Displays size and permissions
+* Uses loops and Linux commands
+
+---
+
+### 🔹 Script 4: Log File Analyzer
+
+* Reads a log file
+* Counts occurrences of a keyword (like ERROR)
+* Displays summary and last 5 matching lines
+
+---
+
+### 🔹 Script 5: Open Source Manifesto Generator
+
+* Takes user input
+* Generates a personalized open-source statement
+* Saves output to a `.txt` file
+
+---
+
+## ⚙️ How to Run the Scripts
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Charanreddy0007/oss-audit-24BCY10254.git
+cd oss-audit-24BCY10254
+```
+
+### Step 2: Give Permission
+
+```bash
+chmod +x *.sh
+```
+
+### Step 3: Run Scripts
+
+```bash
+./script1_system_identity.sh
+./script2_package_inspector.sh
+./script3_disk_auditor.sh
+./script4_log_analyzer.sh /var/log/syslog error
+./script5_manifest_generator.sh
+```
+
+---
+
+## 📦 Requirements
+
+* Linux system (Ubuntu recommended)
+* Bash shell
+* LibreOffice installed
+
+Install LibreOffice using:
 
 ```bash
 sudo apt update
-sudo apt install -y bash libreoffice coreutils grep gawk# oss-audit-24BCY10254
+sudo apt install libreoffice
+```
+
+---
+
+## 📄 Project Structure
+
+```
+oss-audit-24BCY10254/
+│
+├── script1_system_identity.sh
+├── script2_package_inspector.sh
+├── script3_disk_auditor.sh
+├── script4_log_analyzer.sh
+├── script5_manifest_generator.sh
+└── README.md
+```
+
+---
+
+## 🧠 Learning Outcome
+
+Through this project, I learned:
+
+* Basics of open source software
+* Linux system usage
+* Shell scripting concepts
+* Importance of community in software development
+
+---
+
+## 📎 Submission Details
+
+This repository contains:
+
+* All 5 shell scripts
+* README file
+
+The project report is submitted separately as a PDF on the VITyarthi portal.
+
+---
